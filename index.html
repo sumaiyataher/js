@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS/JQ</title>
+    
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  </head>
+  <body>
+   <div class="container">
+    <!-- variable -->
+    <!-- let -->
+    <h2 class="text-danger">let</h2>
+    <button class="btn btn-dark" onclick="calculation()">calculate</button>
+    <h3 id="value">let</h3>
+    <hr>
+
+    <h2 class="text-danger">var</h2>
+    <button class="btn btn-dark" onclick="cal()">cal</button>
+    <h3 id="var">var</h3>
+    <hr>
+
+
+<!-- events -->
+<h2 class="text-danger">Hello JavaScript!</h2>
+<button class="btn btn-dark" onmousedown="textClick()">Click me</button>
+<h3 id="c_t"> Double-click this paragraph to trigger a function</h3>
+<hr>
+
+<!-- focus -->
+<h2 class="text-danger">Hello JavaScript!</h2>
+<button class="btn btn-dark" onfocus="myfunction()">Enter your name: <input type="text"></button>
+<h3 id="u">focus</h3>
+<hr>
+
+<!--  javascript string -->
+
+<h2 class="text-danger">JavaScript Strings</h2>
+<button class="btn btn-dark" onmousedown="java()">Click me</button>
+<h3 id="s_t">Javascript</h3>
+<hr>
+
+
+<!--  javascriptStringAt() -->
+<h1>JavaScript Strings</h1>
+<button class="btn btn-dark" onmousedown="stringAi()">Click me</button>
+<h3 id="a_i">Bracket Notation</h3>
+<hr>
+
+<!-- Array -->
+<h1>JavaScript Arrays</h1>
+<button class="btn btn-dark" onclick="array()">Click me</button>
+<h3 id="j_a">Bracket Notation</h3>
+<hr>
+
+ <!-- Array length -->
+<h1>JavaScript size</h1>
+<button class="btn btn-dark" onclick="arraysize()">Click me</button>
+<h3 id="s">Array size</h3>
+<hr>
+
+<!-- Array number -->
+ <h1>JavaScript number</h1>
+<button class="btn btn-dark" onclick="arrayNumber()">Click me</button>
+<h3 id="n">Array Number</h3>
+<hr>
+
+<!-- operator -->
+<!-- addition -->
+<h2 class="text-danger">Addition</h2>
+    <button class="btn btn-dark" onclick="add()">Add</button>
+    <h3 id="ad_v">Addition value</h3>
+    <hr>
+<!-- substraction -->
+    <h2 class="text-danger"> Subtraction</h2>
+    <button class="btn btn-dark" onclick="sub()">sub</button>
+    <h3 id="sub_v"> Subtraction value</h3>
+    <hr>
+<!-- Multiplication -->
+<h2 class="text-danger">Multiplication</h2>
+    <button class="btn btn-dark" onclick="multi()">multi</button>
+    <h3 id="mul_v"> multiple value</h3>
+    <hr>
+<!-- division -->
+    <h2 class="text-danger">Division</h2>
+    <button class="btn btn-dark" onclick="divi()">divi</button>
+    <h3 id="div_v">Division value</h3>
+    <hr>
+
+<!-- Modulas -->
+<h2 class="text-danger"> Modulas</h2>
+<button class="btn btn-dark" onclick="modu()">modu</button>
+<h3 id="mod_v">Modulas value</h3>
+<hr>
+
+<!-- Exponentiation -->
+<h2 class="text-danger">Exponentiation </h2>
+<button class="btn btn-dark" onclick="exp()">exp</button>
+<h3 id="ex_v">Exponentiation value</h3>
+<hr>
+
+
+ <!-- show -->
+ <h2 class="text-danger">Hello JavaScript!</h2>
+<button class="btn btn-dark" onclick="textShow()">Show text</button>
+<h3 id="s_t"> JavaScript can show  HTML elements.</h3>
+<hr>
+
+<!-- hide -->
+<h2 class="text-danger">Hello JavaScript!</h2>
+<button class="btn btn-dark" onclick="textHide()">Hide text</button>
+<h3 id="h_t"> JavaScript can hide  HTML elements.</h3>
+<hr>
+
+<!-- font change -->
+<h2 class="text-danger">click the button to change the font</h2>
+<button class="btn btn-dark" onmouseover="fontChange()">Change font</button>
+<h3 id="c_f"> JavaScript can change the style of an HTML element.</h3>
+<hr>
+    <!-- colour change -->
+    <h2 class="text-danger">click the button to change the color</h2>
+    <button class="btn btn-dark" onmouseleave="colorChange()">Change Colour</button>
+    <h3 id="text">Lorem ipsum dolor sit </h3>
+    <hr>
+
+<!-- bg change -->
+<h2 class="text-danger">click the button to background colour change the color</h2>
+<button class="btn btn-dark" onmouseleave="backgroundcolorChange()"> Background Change Colour</button>
+<h3 id="b_g">Lorem ipsum dolor sit </h3>
+<hr>
+
+
+    <!-- bulb on/off -->
+    <h2 class="text-danger"> click the button to On/Off the bulb</h2>
+    <button class="btn btn-dark"onclick="bulbOn()">bulb on</button>
+    <button class="btn btn-dark"onclick="bulbOff()">bulb off</button>
+
+    <img id="bulb" src="images/off.gif" alt="">
+     <hr>
+<!-- show date -->
+<h2 class="text-danger">click the button to change the date</h2>
+<button class="btn btn-dark" onclick="showDate()">Show Date</button>
+<h3 id="s_d">Show Date</h3>
+<hr>
+<!-- text change -->
+    <h2 class="text-danger">click the button to change the text</h2>
+    <button class="btn btn-dark" onclick="textChange()">Text Change</button>
+    <h3 id="t_c">Lorem iphum,doler</h3>
+
+    <!-- decimal change -->
+    <h2 class="text-danger">Number can be written with or without decimals</h2>
+    <button class="btn btn-dark" onclick="decimalChange()">decimal Change</button>
+    <h3 id="d_c">Lorem iphum,doler</h3>
+    <hr>
+</div>
+  <!-- alert -->
+
+<h2 class="text-danger">Hello JavaScript!</h2>
+<button class="btn btn-dark" onclick="greet()">clickme</button>
+<hr>
+
+<!-- assignmentOperator addition -->
+<h1>The + = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorAddition()">clickme</button>
+<h3 id="as_a">Operator</h3>
+<hr>
+
+
+<!-- assignmentOperator substraction  -->
+<h1>The - = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorSubstraction()">output</button>
+<h3 id="a_s">Operator</h3>
+<hr>
+
+<!-- assignmentOperator Multiplication -->
+<h1>The * = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorMultiplication()">output</button>
+<h3 id="o_m">Operator</h3>
+<hr>
+
+<!-- assignmentOperator Exponentiation -->
+<h1>The ** = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorExponentiation()">output</button>
+<h3 id="o_e">Operator</h3>
+<hr>
+
+<!-- assignmentOperator Division -->
+<h1>The / = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorDivision()">output</button>
+<h3 id="d_o">Operator</h3>
+<hr>
+
+<!-- assignmentOperator  Modulus -->
+<h1>The  % = Operator</h1>
+<button class="btn btn-dark" onclick="assignmentOperatorModulus()">output</button>
+<h3 id="m_a">Operator</h3>
+<hr>
+
+<!-- upper case -->
+      <h2 class="text-danger">Click the button to change the text in uppercase</h2>
+      <button class="btn btn-dark" onclick="textUpper()">Uppercase</button>
+      <p id="u_t">See the new text</p>
+      <hr>
+
+      <!-- lower case -->
+      <h2 class="text-danger">Click the button to change the text in lowercase</h2>
+      <button class="btn btn-dark" onclick="textLower()">Lowercase</button>
+      <p id="l_t">See the new text</p>
+      <hr>
+
+
+ <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
